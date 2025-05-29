@@ -1,8 +1,16 @@
-<nav>
-  <ul>
-    <li><a [routerLink]="[ '/product', '1' ]">Product 1</a></li>
-    <li><a [routerLink]="[ '/post' ]">Post</a></li>
-  </ul>
-</nav>
-Báder László csinálta :D
-<router-outlet />
+<main class="container">
+  <nav>
+    <a [routerLink]="[ '/' ]">
+      <img src="logo.png" alt="Logo" style="height: 40px; border-radius: 50%" />
+    </a>
+
+    <ul>
+      <li><a [routerLink]="[ '/hydrate-no' ]">Hydrate No</a></li>
+      <li><a [routerLink]="[ '/hydrate-interaction' ]">Hydrate Interaction</a></li>
+      <li><a [routerLink]="[ '/hydrate-timer' ]">Hydrate Timer</a></li>
+      <li><a [routerLink]="[ '/product', '1' ]">Product 1</a></li>
+    </ul>
+  </nav>
+
+  <router-outlet />
+</main>

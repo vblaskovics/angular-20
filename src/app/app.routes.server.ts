@@ -4,10 +4,6 @@ import { ProductService } from './pages/product/product.service';
 
 export const serverRoutes: ServerRoute[] = [
   {
-    path: 'post',
-    renderMode: RenderMode.Server,
-  },
-  {
     path: 'product/:id',
     renderMode: RenderMode.Prerender,
     async getPrerenderParams() {
@@ -19,6 +15,6 @@ export const serverRoutes: ServerRoute[] = [
   },
   {
     path: '**',
-    renderMode: RenderMode.Prerender,
+    renderMode: RenderMode.Server,
   },
 ];

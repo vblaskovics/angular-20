@@ -4,10 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "serve-ssr": "ng serve --no-hmr",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:angular-20": "node dist/angular-20/server/server.mjs"
+    "serve:ssr:angular-20": "node --inspect dist/angular-20/server/server.mjs"
   },
   "private": true,
   "dependencies": {
