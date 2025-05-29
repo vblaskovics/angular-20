@@ -1,0 +1,34 @@
+# Node modules
+node_modules/
+
+# Build output
+dist/
+dist-server/
+__build__/
+__server_build__/
+
+# Angular generated files
+*.ngfactory.ts
+*.css.shim.ts
+*.ngsummary.json
+*.metadata.json
+*.shim.ngstyle.ts
+
+# Logs
+*.log
+npm-debug.log*
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+
+# Typings
+typings/
+tsd_typings/
+
+# Karma test coverage
+coverage/
+
+# Storybook build
+storybook-static/

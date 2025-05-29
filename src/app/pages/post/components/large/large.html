@@ -1,0 +1,10 @@
+<div class="container">
+  <h2>Large Component Loaded</h2>
+
+  @for (item of items.slice(0, 200); track $index) {
+  <h4>{{ item.name }}</h4>
+  <p>{{ item.description }}</p>
+  <span>Calc: {{ heavyCalculation(item.id % 10) }}</span>
+  <hr />
+  }
+</div>

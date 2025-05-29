@@ -1,0 +1,62 @@
+<h1>hydrate on idle</h1>
+<p>
+  The hydrate on idle trigger loads the deferrable view's dependencies and hydrates the content once the browser has
+  reached an idle state, based on requestIdleCallback.
+</p>
+@defer (hydrate on idle) { <app-large />} @placeholder {
+<div>Large component placeholder</div>
+}
+
+<h1>hydrate on viewport</h1>
+<p>
+  The hydrate on viewport trigger loads the deferrable view's dependencies and hydrates the corresponding page of the
+  app when the specified content enters the viewport using the Intersection Observer API.
+</p>
+@defer (hydrate on viewport) { <app-large />} @placeholder {
+<div>Large component placeholder</div>
+}
+
+<h1>hydrate on interaction</h1>
+<p>
+  The hydrate on interaction trigger loads the deferrable view's dependencies and hydrates the content when the user
+  interacts with the specified element through click or keydown events.
+</p>
+@defer (hydrate on interaction) { <app-large />} @placeholder {
+<div>Large component placeholder</div>
+}
+
+<h1>hydrate on hover</h1>
+<p>
+  The hydrate on hover trigger loads the deferrable view's dependencies and hydrates the content when the mouse has
+  hovered over the triggered area through the mouseover and focusin events.
+</p>
+@defer (hydrate on hover) { <app-large />} @placeholder {
+<div>Large component placeholder</div>
+}
+
+<h1>hydrate on immediate</h1>
+<p>
+  The hydrate on immediate trigger loads the deferrable view's dependencies and hydrates the content immediately. This
+  means that the deferred block loads as soon as all other non-deferred content has finished rendering.
+</p>
+@defer (hydrate on immediate) { <app-large />} @placeholder {
+<div>Large component placeholder</div>
+}
+
+<h1>hydrate on timer</h1>
+<p>
+  The hydrate on timer trigger loads the deferrable view's dependencies and hydrates the content after a specified
+  duration.
+</p>
+@defer (hydrate on timer(500ms)) { <app-large />} @placeholder {
+<div>Large component placeholder</div>
+}
+
+<h1>hydrate when</h1>
+<p>
+  The hydrate when trigger accepts a custom conditional expression and loads the deferrable view's dependencies and
+  hydrates the content when the condition becomes truthy.
+</p>
+@defer (hydrate when true) { <app-large />} @placeholder {
+<div>Large component placeholder</div>
+}
