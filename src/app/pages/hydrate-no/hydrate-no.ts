@@ -4,9 +4,9 @@ import { Large } from '../../components/large/large';
 @Component({
   selector: 'app-hydrate',
   imports: [Large],
-  template: `<h1>No hydrate</h1>
+  template: `<h1>No incremental hydrate</h1>
     <p>
-      No hydration here.
+      No incremental hydration here.
     </p>
     @defer {
       <app-large />

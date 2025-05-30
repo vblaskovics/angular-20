@@ -13,10 +13,19 @@ import { Sparkle } from '../sparkle/sparkle';
       Counter <span>{{ counter() }}</span>
     </p>
     <p>{{ description() }}</p>
-    <button (click)="counter.set(counter() + 1)">Counter++</button>
-    <button (click)="onAlert()">Alert</button>
+    <footer>
+      <button (click)="counter.set(counter() + 1)">Counter++</button>
+      <button (click)="onAlert()">Alert</button>
+    </footer>
   </article>`,
-  styles: `header { display: flex; align-items: center; gap: 10px; }`
+  styles: `
+    header,
+    footer {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  `,
 })
 export class Card {
   counter = signal(0);
@@ -25,6 +34,6 @@ export class Card {
   description = input<string>('');
 
   onAlert() {
-    alert("⚡ Alert ⚡")
+    alert('⚡ Alert ⚡');
   }
 }
